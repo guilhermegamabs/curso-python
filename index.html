@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for=""
+      >Informe quantas "Coca-Cola" você acha que já bebeu na vida:
+    </label>
+    <input type="number" name="input_qtdCoca" id="input_qtdCoca" />
+    <button type="submit" onclick="exibir()"></button>
+    <div id="mensagem"></div>
+    <script>
+      function exibir() {
+        var Coca = Number(input_qtdCoca.value);
+        var contar = 0;
+
+        mensagem.innerHTML = "";
+
+        while (contar < Coca) {
+          contar += 1;
+          mensagem.innerHTML += `<img src="https://www.imagensempng.com.br/wp-content/uploads/2022/01/2442.png" width="300px">`;
+        }
+      }
+    </script>
+  </body>
+</html>
